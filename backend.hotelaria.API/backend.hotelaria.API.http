@@ -1,0 +1,6 @@
+@backend.hotelaria.API_HostAddress = http://localhost:5004
+
+GET {{backend.hotelaria.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

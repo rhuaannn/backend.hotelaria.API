@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.hotelaria.API", "backend.hotelaria.API\backend.hotelaria.API.csproj", "{A15149FD-063D-4B42-A63D-15913496A337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend.hotelaria.domain", "backend.hotelaria.domain\backend.hotelaria.domain.csproj", "{15EF41B3-F198-4770-B12C-D7B3346CFABC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A15149FD-063D-4B42-A63D-15913496A337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15149FD-063D-4B42-A63D-15913496A337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15149FD-063D-4B42-A63D-15913496A337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15149FD-063D-4B42-A63D-15913496A337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15EF41B3-F198-4770-B12C-D7B3346CFABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EF41B3-F198-4770-B12C-D7B3346CFABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EF41B3-F198-4770-B12C-D7B3346CFABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EF41B3-F198-4770-B12C-D7B3346CFABC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDEF8B5D-8800-447C-9E96-7702C7DF40BC}
+	EndGlobalSection
+EndGlobal

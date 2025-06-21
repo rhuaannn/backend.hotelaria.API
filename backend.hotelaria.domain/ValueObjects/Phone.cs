@@ -1,0 +1,27 @@
+﻿namespace backend.hotelaria.domain.ValueObjects
+{
+    public class Phone
+    {
+        public string Number { get; private set; } = string.Empty;
+        protected Phone()
+        {
+        }
+        public Phone(string number)
+        {
+            if (string.IsNullOrWhiteSpace(number))
+            {
+                throw new Exception("Phone number cannot be null or empty.");
+            }
+            if (!IsValidPhoneNumber(number))
+            {
+                throw new Exception("Invalid phone number format.");
+            }
+            Number = number;
+        }
+        public bool IsValidPhoneNumber(string number)
+        {
+            return number.All(char.IsDigit) && number.Length >= 11;
+        }
+        public override string ToString() => Number;
+    }
+}
