@@ -18,8 +18,6 @@ namespace backend.hotelaria.domain.EntitesCliente
             Telefone = telefone;
             Documento = documento;
         }
-        protected PessoaBase()
-        { 
-        }
+       
     }
 }
