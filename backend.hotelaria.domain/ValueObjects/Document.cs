@@ -1,6 +1,6 @@
 ﻿namespace backend.hotelaria.domain.ValueObjects
 {
-    public struct Document
+    public class Document
     {
         public string DocumentNumber { get; private set; } = string.Empty;
 

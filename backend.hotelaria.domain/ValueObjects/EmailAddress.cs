@@ -1,6 +1,6 @@
 ﻿namespace backend.hotelaria.domain.ValueObjects
 {
-    public struct EmailAddress
+    public class EmailAddress
     {
         public string Address { get; private set; } = string.Empty;
 

@@ -3,7 +3,8 @@
     public class Phone
     {
         public string Number { get; private set; } = string.Empty;
-        protected Phone()
+      
+        protected Phone() 
         {
         }
         public Phone(string number)
@@ -18,7 +19,7 @@
             }
             Number = number;
         }
-        public bool IsValidPhoneNumber(string number)
+        public static bool IsValidPhoneNumber(string number)
         {
             return number.All(char.IsDigit) && number.Length >= 11;
         }
