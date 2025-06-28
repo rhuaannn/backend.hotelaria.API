@@ -1,12 +1,10 @@
 ﻿namespace backend.hotelaria.domain.ValueObjects
 {
-    public class Document
+    public struct Document
     {
         public string DocumentNumber { get; private set; } = string.Empty;
 
-        protected Document()
-        {
-        }
+       
         public Document(string documentNumber)
         {
             if (string.IsNullOrWhiteSpace(documentNumber))
@@ -37,6 +35,8 @@
             }
             return false;
         }
+        public static implicit operator string(Document document) => document.DocumentNumber;
+        public static implicit operator Document(string documentNumber) => new Document(documentNumber);
         public override string ToString() => DocumentNumber;
     }
 }

@@ -27,13 +27,11 @@
     {
     }
 
-    public void RegistrarConsumo(int quantidade)
+    public void RegistrarConsumoProduto(int quantidade)
     {
-        if (quantidade <= 0)
-            throw new Exception("Quantidade deve ser maior que zero");
-
-        if (quantidade > QuantidadeDisponivel)
+       if (quantidade > QuantidadeDisponivel)
             throw new Exception($"Quantidade indisponível. Disponível: {QuantidadeDisponivel}");
+        
 
         QuantidadeDisponivel -= quantidade;
     }

@@ -22,6 +22,8 @@
         {
             return number.All(char.IsDigit) && number.Length >= 11;
         }
+        public static implicit operator string(Phone phone) => phone.Number;
+        public static implicit operator Phone(string number) => new Phone(number);
         public override string ToString() => Number;
     }
 }

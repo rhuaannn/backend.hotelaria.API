@@ -10,14 +10,15 @@
 
         _produtos.AddRange(produtos);
     }
-    public void RegistrarConsumo(string nomeProduto, int quantidade)
+    public void RegistrarConsumo(Guid id, int quantidade)
     {
-        var produto = _produtos.FirstOrDefault(p => p.Nome == nomeProduto);
+        var produto = _produtos.FirstOrDefault(p => p.Id == id);
         if (produto == null)
             throw new Exception("Produto não encontrado no MiniBar.");
 
-        produto.RegistrarConsumo(quantidade);
-    }
+        produto.RegistrarConsumoProduto(quantidade);
+
+    }        
     public double CalcularTotalConsumo()
     {
         return _produtos.Sum(p => p.CalcularConsumo());
