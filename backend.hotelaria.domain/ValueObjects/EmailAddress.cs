@@ -4,7 +4,9 @@
     {
         public string Address { get; private set; } = string.Empty;
 
-   
+        protected EmailAddress() 
+        {
+        }
         public EmailAddress(string address)
         {
             if (string.IsNullOrWhiteSpace(address))

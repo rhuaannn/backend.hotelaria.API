@@ -6,25 +6,22 @@ namespace backend.hotelaria.domain.Services
     {
         public double CalcularValorTipo(TipoQuartoEnum tipo, double valorDiaria)
         {
-           if(tipo == TipoQuartoEnum.Solteiro)
+            if (tipo == TipoQuartoEnum.Solteiro)
             {
-                return valorDiaria * 1.0;  
+                return valorDiaria * 1.0;
             }
-            else if(tipo == TipoQuartoEnum.Casal)
+            else if (tipo == TipoQuartoEnum.Casal)
             {
-                return valorDiaria * 1.2;  
+                return valorDiaria * 1.2;
             }
-            else if(tipo == TipoQuartoEnum.Luxo)
+            else if (tipo == TipoQuartoEnum.Luxo)
             {
-                return valorDiaria * 1.5; 
+                return valorDiaria * 1.5;
             }
             else
             {
                 throw new Exception("Tipo de quarto inválido.");
-            }
-
-            
-            
+            }            
         }
     }
 }

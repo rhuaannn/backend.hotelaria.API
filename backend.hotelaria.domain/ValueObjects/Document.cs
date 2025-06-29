@@ -4,7 +4,10 @@
     {
         public string DocumentNumber { get; private set; } = string.Empty;
 
-       
+        protected Document() 
+        {
+        }
+
         public Document(string documentNumber)
         {
             if (string.IsNullOrWhiteSpace(documentNumber))
@@ -19,7 +22,7 @@
 
         }
 
-        public bool IsValidDocument(string documentNumber)
+        public static bool IsValidDocument(string documentNumber)
         {
           
             if (documentNumber.Length == 11 && documentNumber.All(char.IsDigit))
