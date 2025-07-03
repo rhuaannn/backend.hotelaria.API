@@ -3,10 +3,10 @@ namespace backend.hotelaria.domain.Repositories
 {
     public interface IProdutoRepository
     {
-        Produto ObterPorId(Guid id);
-        IEnumerable<Produto> ObterTodos();
-        void Adicionar(Produto produto);
-        void Atualizar(Produto produto);
-        void Remover(Guid id);
+        public Produto ObterPorId(Guid id);
+        public IEnumerable<Produto> ObterTodos();
+        public void Adicionar(Produto produto);
+        public void Atualizar(Produto produto);
+        public void Remover(Guid id);
     }
 }

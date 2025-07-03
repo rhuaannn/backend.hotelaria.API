@@ -12,8 +12,9 @@ namespace backend.hotelaria.domain.EntitesCliente
         public Dependente(Guid id, string nome, EmailAddress email, Phone telefone, Document documento, int idade, Cliente cliente)
             : base(id, nome, email, telefone, documento)
         {
-            if(Idade < 0)
+            if(idade < 0)
                 throw new ArgumentException("Idade não pode ser negativa");
+           
             Idade = idade;
             Cliente = cliente;
         }

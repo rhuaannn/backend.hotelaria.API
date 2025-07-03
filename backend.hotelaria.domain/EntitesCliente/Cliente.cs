@@ -16,6 +16,8 @@ namespace backend.hotelaria.domain.EntitesCliente
         }
         public void AdicionarDependente(string nome, EmailAddress email, Phone telefone, Document documento, int idade)
         {
+            if (_dependentes.Any(d => d.Documento.Equals(documento)))
+               throw new Exception("Já existe dependente com este documento");
             var dependente = new Dependente(Guid.NewGuid(), nome, email, telefone, documento, idade, this);
             _dependentes.Add(dependente);
         }

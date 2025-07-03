@@ -26,7 +26,7 @@ public class Quarto
 
     public bool QuartoDisponivel() => Status == QuartoStatus.Disponivel;
 
-    public void Reservar(int quantidadePessoas, DateTime dataReserva, TipoQuartoEnum tipoQuartoEnum)
+    public void Reservar(int quantidadePessoas, DateTime dataReserva)
     {
         
         if (dataReserva.Date < DateTime.Now.Date)
@@ -49,7 +49,7 @@ public class Quarto
         if (quantidadePessoas > CapacidadeMaxima)
             throw new Exception("Número de pessoas excede a capacidade máxima do quarto.");
        
-        Reservar(quantidadePessoas, DateTime.Now, Tipo);
+        Reservar(quantidadePessoas, DateTime.Now);
         Status = QuartoStatus.Ocupado;
     }
 

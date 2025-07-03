@@ -35,6 +35,12 @@
 
         QuantidadeDisponivel -= quantidade;
     }
+    public void ReporProduto(int quantidade)
+    {
+        if (quantidade <= 0)
+            throw new Exception("Quantidade a repor deve ser maior que zero");
+        QuantidadeDisponivel += quantidade;
+    }
 
     public double CalcularConsumo()
     {
