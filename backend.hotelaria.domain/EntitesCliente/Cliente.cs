@@ -18,6 +18,8 @@ namespace backend.hotelaria.domain.EntitesCliente
         {
             if (_dependentes.Any(d => d.Documento.Equals(documento)))
                throw new Exception("Já existe dependente com este documento");
+            if(_dependentes.Count >= 6)
+                throw new Exception("Número máximo de dependentes atingido (6)");
             var dependente = new Dependente(Guid.NewGuid(), nome, email, telefone, documento, idade, this);
             _dependentes.Add(dependente);
         }
