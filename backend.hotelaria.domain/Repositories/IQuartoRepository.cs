@@ -2,11 +2,11 @@
 {
     public interface IQuartoRepository
     {
-        public Quarto ObterPorId(Guid id);
-        public IEnumerable<Quarto> ObterTodos();
-        public void Adicionar(Quarto quarto);
-        public void Atualizar(Quarto quarto);
-        public void Remover(Guid id);
+        Task <Quarto> ObterPorId(Guid id);
+        Task<IEnumerable<Quarto>> ObterTodos();
+        Task Adicionar(Quarto quarto);
+        Task Atualizar(Quarto quarto);
+        Task Remover(Guid id);
 
     }
 }
