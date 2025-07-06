@@ -1,6 +1,6 @@
 ﻿using backend.hotelaria.domain.EntitesCliente;
 
-namespace backend.hotelaria.domain.Repositories
+namespace backend.hotelaria.domain.Interface
 {
     public interface IClienteRepository
     {

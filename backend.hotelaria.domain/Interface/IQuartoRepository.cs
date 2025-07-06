@@ -1,4 +1,4 @@
-﻿namespace backend.hotelaria.domain.Repositories
+﻿namespace backend.hotelaria.domain.Interface
 {
     public interface IQuartoRepository
     {
