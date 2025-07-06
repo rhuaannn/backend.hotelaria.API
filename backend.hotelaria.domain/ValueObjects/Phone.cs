@@ -11,11 +11,11 @@
         {
             if (string.IsNullOrWhiteSpace(number))
             {
-                throw new Exception("Phone number cannot be null or empty.");
+                throw new Exception("numero nao pode ser vazio.");
             }
             if (!IsValidPhoneNumber(number))
             {
-                throw new Exception("Invalid phone number format.");
+                throw new Exception("Formato inválido.");
             }
             Number = number;
         }

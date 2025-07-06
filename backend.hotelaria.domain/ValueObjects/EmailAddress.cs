@@ -11,11 +11,11 @@
         {
             if (string.IsNullOrWhiteSpace(address))
             {
-                throw new Exception("Email address cannot be null or empty.");
+                throw new Exception("Email não pode ser vazio.");
             }
             if (!IsValidEmail(address))
             {
-                throw new Exception("Invalid email address format.");
+                throw new Exception("Formado inválido.");
             }
             Address = address;
         }

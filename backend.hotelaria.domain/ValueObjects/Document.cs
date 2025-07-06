@@ -12,11 +12,11 @@
         {
             if (string.IsNullOrWhiteSpace(documentNumber))
             {
-                throw new Exception("Document number cannot be null or empty.");
+                throw new Exception("Documento não pode ser vazio.");
             }
             if (!IsValidDocument(documentNumber))
             {
-                throw new Exception("Invalid document number format.");
+                throw new Exception("Formato inválido.");
             }
             DocumentNumber = documentNumber;
 
